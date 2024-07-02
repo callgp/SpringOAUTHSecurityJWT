@@ -16,7 +16,7 @@ import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 
 @Component
-public class JwtService {
+public class JwtService {//test
 
     public static final String SECRET = "357638792F423F4428472B4B6250655368566D597133743677397A2443264629";
 
