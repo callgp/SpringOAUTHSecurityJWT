@@ -1,0 +1,49 @@
+1. start the spring boot app
+2. open the postman
+3. register user as below from postman
+end point url
+http://localhost:8081/api/register
+data 
+raw
+data type
+json
+body
+{
+   "uname":"gpp",
+   "pwd":"gpppwd",
+   "phno":1234567890
+
+}
+method name
+Post
+
+
+make sure response comes as below with 200 0k success
+User registered
+
+goto db to verify user registererd or created
+SELECT * FROM 31dev.customer;
+make sure you see the record gpp and gpppwd and 1234567890
+
+go to other postman request or duplicate above request in postman if already not there
+
+give below data in postman
+
+endpoint url
+http://localhost:8081/api/login
+method name
+post
+
+body
+{
+   "uname":"gpp",
+   "pwd":"gpppwd",
+   "phno":1234567890
+
+}
+
+
+now generates token in response
+
+
+
